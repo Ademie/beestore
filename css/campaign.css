@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+html, body{
+    overflow: hidden;
+    filter: saturate(100%);
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+img{
+    max-width: 100%;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 40px;
+    flex-direction: column;
+    
+}
+.navbar h1{
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 1800;
+}
+.logo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+nav{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+h1{
+    font-size: 24px;
+}
+
+.row_content{
+    display: flex;
+}
+p{
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.header{
+    background: radial-gradient(#fc8181bb, #FC81815f);
+    padding: 80px;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+/* showcase */
+.circle1, .circle2, .circle3{
+    background: linear-gradient(to left top, #fc8181bb, #FC81815f);
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;   
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+}
+.circle1{
+    right: 250px;
+    top: 85px;
+    width: 400px;
+    height: 400px;
+}
+.circle2{
+    left: 550px;
+    top: 300px;
+}
+.circle3{
+    left: 500px;
+    top: 520px;
+}
+.row{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.667), rgba(255, 255, 255, 0.456));
+    min-width: 85%;
+    max-width: 85%;
+    margin: auto;
+    min-height: 85vh;
+    max-height: 85vh;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 4;
+    border: 4px solid white;
+    box-shadow:0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2.image{
+    position: relative;
+
+}
+.col-2 img{
+    /* max-width: 100%; */
+    padding: 50px 0px;
+    filter:grayscale(15%);
+    filter: saturate(100%);
+    filter: drop-shadow(0 0.4rem 0.25rem rgb(147, 8, 8));
+}
+.col-2.image .name{
+    position: absolute;
+    left: 10%;
+    bottom:35%;
+    background: rgba(0, 0, 0, 0.456);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+}
+/* ADEMI TEXT */
+.col-2 h1{
+    font-size: 75px;
+    overflow: hidden;
+    line-height: 60px;
+    margin: 25px 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+}
+.col-2.text{
+    padding: 50px;
+    position: relative;
+}
+.col-2.text .heading{
+    text-align: center;
+}
+.col-2.text small{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 38px;
+    color: #fa4646;
+    position: absolute;
+    left: 40%;
+    top: 20px;
+}
+.col-2.text .support{
+    color: #fa4646;
+    position: absolute;
+    top: 25%;
+    left: 19%;
+    font-size: 170%;
+}
+.support .post{
+    background: #fa4646;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+.support .fas{
+    display: inline;
+}
+.quote{
+    margin-top: 80px;
+}
+.quote span{
+    color: #fa4646;
+}
+.numbers{
+    position: absolute;
+    bottom: 27%;
+    overflow: hidden;
+}
+.num{
+    background: black;
+    color: white;
+    font-size: 40px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

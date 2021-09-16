@@ -1,0 +1,113 @@
+/* media query for menu */
+@media only screen and (max-width:800px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 99;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+
+    .fas.menu-icon{
+        display: block;
+    }
+    #menu{
+        max-height: 0px;
+    }
+     .col-3, .col-4{
+        flex-basis: 90%;
+    }
+    .col-5{
+        flex-basis: 70%;
+    }
+     .footer-col-2, .footer-col-3{
+        flex-basis:100%;
+    }
+    .footer-col-1{
+        text-align: center;
+    }
+    /* search bar on product page */
+    .row.row-2{
+        position: relative;
+        min-height: 15vh;
+        margin-bottom: 0px;
+    }
+    
+    .small-container{
+        position: relative;
+        box-sizing: unset;
+    }
+    .row.row-2 h2{
+        position: absolute;
+        top: 0px;
+    }
+    .paging{
+        text-align: center;
+    }
+}
+
+/* media query for < 600 */
+@media screen and (max-width:600px) { 
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .col-5{
+        flex-basis: 70%;
+    }
+    .col-5 img{
+        width: 200px;
+    }
+    /* PRODUCT DETAILS PAGE */
+    .details .row{
+        text-align: left;
+    }
+    .details .col-2{
+        padding: 20px 0px;
+    }
+    /* Add to cart column*/
+    .details .col-2 .col-2.cart{
+        margin-left: 0px;
+    }
+    /* product title */
+    .details h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    /* CART PAGE */
+    /* hide product name on small screen */
+    .cart-info p{
+        display: none;
+    }
+}
+/* potrait */
+@media screen and (min-width:800px) and (max-width:900px)  {
+    .col-4{
+        flex-basis: 47%;
+    }
+    .testimonial .col-3{
+        flex-basis: 47%;
+    }
+    .brands{
+        width: 70%;
+    }
+    .col-5{
+        width: 40%;
+        
+    }
+    
+}
